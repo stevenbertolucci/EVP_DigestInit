@@ -77,7 +77,7 @@ void weak_collision(const EVP_MD *md) {
 
         // Brute-force to find a weak collision
         for (;;) {
-            // Generate a random message
+            // Generate a random string
             generate_random_string(random_message, sizeof(random_message));
 
             // Hash the random message
@@ -111,7 +111,7 @@ void strong_collision(const EVP_MD *md) {
 
         // Brute-force to find a strong collision
         for (;;) {
-            // Generate two random messages
+            // Generate two random strings
             generate_random_string(mess1, sizeof(mess1));
             generate_random_string(mess2, sizeof(mess2));
 
